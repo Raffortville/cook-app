@@ -1,0 +1,74 @@
+@import '../../Styles/variables.scss';
+
+header {
+
+    height: 10vh;
+    padding-right: 10px;
+    background-color:$bgColor;
+    @include flex(row,space-between,center); 
+
+    .drawerWrap {
+
+        @include flex(column,flex-start,center);
+        margin-top: 245px;
+        background-color:$bgFull;
+        border-radius: 5px;
+        z-index: 3;
+        width: 20%;
+        height: 60vh;
+        position: relative;
+
+        .drawerWrapMenu {
+           margin-right: 60px;
+           padding-top: 30px;
+        }
+
+        .drawerWrapIcon {
+
+            position: absolute;
+            bottom: 0px;
+        }
+
+        ul {
+
+            list-style: none;
+        }
+    }
+    
+    .wrapName {
+
+        margin-bottom: 5px;
+        margin-left: 50px;
+    }
+
+    .logoTitre{
+
+        @include flex(row,space-between,center);
+    }
+
+    .navWrap {
+
+        @include flex(row,space-between,center);
+
+        .borderButton {
+
+           @include borderShadow();
+           border-radius: 50%;
+        }
+        
+        ul {
+            @include flex(row,space-between,center);
+            list-style: none;
+            
+            li{
+                cursor: pointer;
+            }
+        }
+
+        .avatarWrap {
+
+            margin-left: 20px;
+        }
+    }
+}
+

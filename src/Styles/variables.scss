@@ -1,0 +1,52 @@
+$height100:100vh;
+$width100:100%;
+
+$height90:90vh;
+
+$primary : #BC4639;
+
+$secondary : #4285F4;
+
+$success : #129c00e1;
+
+$error : #e00f0fd7;
+
+$warning: #e77407ee;
+
+$main : #250e0bcc;
+
+$bgColor :#d1b7b1ea;
+
+$bgFull:#d1b7b1;
+
+$bgLight :#e9e2e059;
+
+
+@mixin borderShadow {
+    
+    box-shadow: 3px 3px 10px  rgba(158, 129, 129, 0.356);
+}
+
+
+@mixin icon($color){
+
+    color:$color;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 1.3em !important;
+}
+
+@mixin p {
+    
+    margin: 0px 0px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@mixin flex($direction,$justify,$align){
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

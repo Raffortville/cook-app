@@ -1,0 +1,21 @@
+@import '../../Styles/variables.scss';
+
+.paper {
+
+    @include flex(column,center,center); 
+    max-width: 270px;
+    padding: 10px 5px;
+    background-color: $bgLight;
+
+    .liProfil {
+
+        padding: 15px 0px;
+    }
+
+    .wrapButton {
+
+        margin-top: 5px;
+        min-width: 90%;
+    }
+}
+

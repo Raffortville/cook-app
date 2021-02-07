@@ -1,0 +1,15 @@
+@import '../../Styles/variables.scss';
+
+
+.wrapMessage {
+
+    padding-top: 50px;
+    @include flex(column,center,center);
+
+    .wrapAlertFiche {
+
+        width:20%;
+        padding-top: 30px;
+    }
+
+}

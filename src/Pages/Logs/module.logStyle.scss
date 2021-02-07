@@ -1,0 +1,24 @@
+@import '../../Styles/variables.scss';
+
+
+.wrapMain{
+
+    min-height: $height90;
+
+    @include flex(row,center,flex-start);
+
+    .wrapSection{
+  
+        @include flex(column,flex-start,center);
+        margin-left: 230px;
+    }
+}
+
+.wrapAlert {
+
+    width: 10%;
+    margin-left: 50px;
+    
+}
+  
+  

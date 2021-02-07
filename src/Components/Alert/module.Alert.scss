@@ -1,0 +1,33 @@
+@import '../../Styles/variables.scss';
+
+
+.error {
+
+    color: $error;
+    border: 2px solid $error;
+    border-radius: 20px;
+    max-height: 40px;
+    margin-top: 10px;
+    box-shadow: 5px 2px 5px rgba(199, 166, 166, 0.541);
+    padding: 3px 10px;
+    @include flex(row,center,center);
+
+}
+
+.warning {
+
+    color: $warning;
+    border: 2px solid $warning;
+    border-radius: 20px;
+    max-height: 40px;
+    margin-top: 10px;
+    box-shadow: 5px 2px 5px rgba(199, 166, 166, 0.541);
+    padding: 3px 10px;
+    @include flex(row,center,center);
+}
+
+.wrapLoader {
+    
+    height: 80vh;
+    @include flex(row,center,center)
+}

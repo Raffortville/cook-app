@@ -1,0 +1,117 @@
+@import '../../Styles/variables.scss';
+
+
+.rowList {
+
+    @include flex(row,flex-start,flex-start);
+
+    .wrapCategorie{
+
+        @include flex(column,center,flex-start);
+        width: 30%;
+        height: 35vh;
+
+        .wrapSelect {
+
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 55%;
+            height: 25px;
+            cursor: pointer;
+            @include flex(row,space-between,center);
+        }
+    }
+
+    .outterListFiche{
+
+        @include flex(column,flex-start,center);
+       
+        .wrapListFiche {
+
+            min-width: 630px;
+            min-height: 85vh;
+        
+            ul li {
+
+                @include flex(row,flex-start,center);
+                margin-bottom: 5px;
+
+                .CardRoot {
+
+                    @include flex (row,flex-start,center);
+                    min-height: 95px;
+                    min-width: 95%;
+                    padding: 7px 10px;
+                    background-color:$bgLight;
+                    border-radius: 10px;
+                    @include borderShadow;
+
+                    .wrapFicheImg {
+
+                        height: 75px;
+                        width: 70px;
+                        border: 1px solid $bgLight;
+                        border-radius: 10px;
+                        background-size: cover;
+                        background-position: center;
+                        margin-right: 20px;
+                    }
+
+                    .wrapCarcContent {
+
+                        width: 95%;
+
+                        .wrapTitre {
+            
+                            margin: 1px 0px;
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                
+                        .wrapIcons{
+                
+                            @include flex(row,flex-end,center);
+                            
+                            .icon {
+                    
+                                font-size: 1.2em;
+                                color: $main;
+                                opacity: 0.9 !important;
+                                margin-right:10px;
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+            
+                }
+
+            }
+        }
+
+        .pagin  {
+
+            @include flex(row,center,center);
+            height: 20px;
+        
+            ul {
+
+                padding: 0px 10px;
+
+                li{
+                    cursor: pointer;
+                    list-style: none;
+                    color: $main;
+                    opacity: 0.7;
+                }
+
+                .active{
+
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+   
+}

@@ -1,0 +1,25 @@
+@import '../../Styles/variables.scss';
+
+.wrapButton {
+
+    @include flex(row,space-between,center);
+
+    .button {
+
+        color:$secondary;
+
+        p{
+            @include p();
+            font-weight : 600;
+        }
+        
+    }
+
+    .icon {
+
+        color: $secondary;
+        margin-top: 3px;
+
+    }
+
+}

@@ -1,0 +1,137 @@
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Signika&family=Vollkorn:wght@500&display=swap');
+
+
+body {
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Francois One', sans-serif !important;
+  color: $main;
+}
+
+.bgApp {
+
+  background: rgb(243,224,220);
+  background: linear-gradient(90deg, rgba(230, 205, 202, 0.89)25%, rgba(231, 209, 206, 0.808) 100%),url('../assets/bgImg1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.width100 {
+
+  width: $width100;
+}
+
+.height90 {
+
+  min-height: $height90;
+}
+
+.borderTest {
+
+  border:2px solid $primary;
+}
+
+.textPrimary {
+
+  color:$primary;
+}
+
+.textSecondary {
+
+  color: $secondary;
+}
+
+
+.textMain {
+
+  color: $main;
+} 
+
+.underLine {
+
+  text-decoration: underline $main solid 2px ;
+}
+
+.p1 {
+  
+  font-size: 1.2em;
+  @include p
+}
+
+.p2 {
+
+  font-size: 0.9em;
+  @include p
+}
+
+.p3 {
+
+  font-size: 0.8em;
+  @include p
+}
+
+.p4{
+
+  font-weight: 400 !important;
+  font-size: 0.7em;
+  @include p
+}
+
+.h3 {
+  
+  font-size: 1.4em;
+  @include p
+}
+
+.h4 {
+  
+  font-size: 1.2em;
+  @include p
+}
+
+.avatarSmall {
+
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.removeLinkStyle {
+
+  color: inherit !important;
+  text-decoration: inherit !important;
+} 
+
+.borderSimple {
+
+  border: 1px solid $secondary;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.textAlignCenter {
+
+  text-align: center;
+}
+
+.d-flex{
+
+  @include flex(row,center,flex-start);
+}
+
+p{
+  margin: 0px 0px;
+}
+
+.imgAvatar {
+
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}

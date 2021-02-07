@@ -1,0 +1,78 @@
+@import '../../Styles/variables.scss';
+
+.wrapTables {
+
+    @include flex(row,flex-start,flex-start);
+
+    .ingredient {
+
+        min-width: 170px !important;
+        @include flex(row,flex-start,center);
+    }
+
+    table {
+
+    margin: 10px 5px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 0.7em;
+    min-width: 450px;
+    max-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background: $bgLight;
+
+    .iconRed {
+
+      @include icon($error);
+    }
+
+    .iconGreen {
+
+        @include icon($success)
+    }
+
+    .icon {
+
+        font-size: 1.2em;
+        color: $primary;
+        cursor: pointer;
+    }
+
+    .titre {
+
+        color: $secondary;
+        text-decoration: underline;
+        padding-top: 10px;
+        font-size: 1.3em;
+    }
+
+    .iconTitre {
+
+        padding-top: 10px !important;
+    }
+
+    thead tr {
+        
+        color: $primary;
+        text-align: left;
+        @include flex(row,center,baseline);
+        
+        th {
+
+            min-width: 110px;
+            font-size: 1.5em;
+        }
+
+    }
+
+    tbody tr {
+
+        @include flex(row,flex-start,center);
+
+        td{
+            min-width: 110px;
+        }
+    }
+}
+
+}

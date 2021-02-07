@@ -1,0 +1,63 @@
+@import '../../Styles/variables.scss';
+
+
+.wrapText {
+
+    @include flex(row,space-between,center);
+    width: 250px;
+    cursor: pointer;
+}
+
+
+.wrapButtonGoogle {
+
+    @include flex(row,center,center);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4286f4b9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+
+    .textGoogle {
+
+        font-family: 'Roboto', sans-serif;
+        color: ivory;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-left: 10px;
+    }
+
+    .iconButtonGoogle {
+
+        background-image: url('../../assets/btn_google_dark_normal_ios.svg');
+        height: 47px;
+        width: 43px;
+        display: inline-block;
+    }
+
+}
+
+.wrapButtonFb{
+
+    @include flex(row,center,center);   
+    background-color:#4286f4b9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+    color: ivory;
+    height: 49px;
+    margin-top: 10px;
+
+    
+    .textFb {
+
+        font-family: 'Roboto', sans-serif;
+        color: ivory;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-left: 10px;
+
+    }
+    
+}

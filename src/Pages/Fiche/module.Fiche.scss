@@ -1,0 +1,66 @@
+@import'../../Styles/variables.scss';
+
+
+main {
+
+    @include flex(row,flex-start,flex-start);
+    
+
+    .wrapAlert{
+
+        margin-top: 100px;
+        min-width: 260px;
+    }
+
+    .wrapTitre{
+
+        margin-left: 10px;
+    }
+
+    .wrapImg{
+
+        @include flex(row,space-between,center)
+    }
+
+    .wrapFormOut {
+
+        margin-left: 200px;
+
+        .paper {
+
+            width: 350px;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: $bgColor;
+           
+            p {
+                text-align: center;
+            }
+
+            ul {
+
+                list-style: none;
+                width: 80%;
+
+                li {
+
+                    margin-top: 15px;
+                }
+
+                .buttonStyle {
+
+                    height: 30px;
+                    width: 150px;
+                    color: $primary;
+                    font-weight: 700;
+                    font-size: 0.8em;
+                }
+            }
+
+            .wrapButton {
+
+                width: 100%;
+            }
+        }
+    }
+}
