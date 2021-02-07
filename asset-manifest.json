@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cook-app.git/static/css/main.813a2416.chunk.css",
+    "main.js": "/cook-app.git/static/js/main.6fb05159.chunk.js",
+    "main.js.map": "/cook-app.git/static/js/main.6fb05159.chunk.js.map",
+    "runtime-main.js": "/cook-app.git/static/js/runtime-main.ebc0176a.js",
+    "runtime-main.js.map": "/cook-app.git/static/js/runtime-main.ebc0176a.js.map",
+    "static/js/2.85418737.chunk.js": "/cook-app.git/static/js/2.85418737.chunk.js",
+    "static/js/2.85418737.chunk.js.map": "/cook-app.git/static/js/2.85418737.chunk.js.map",
+    "index.html": "/cook-app.git/index.html",
+    "static/css/main.813a2416.chunk.css.map": "/cook-app.git/static/css/main.813a2416.chunk.css.map",
+    "static/js/2.85418737.chunk.js.LICENSE.txt": "/cook-app.git/static/js/2.85418737.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/cook-app.git/static/media/bgImg1.bd38b80d.jpg",
+    "static/media/module.socialButton.scss": "/cook-app.git/static/media/btn_google_dark_normal_ios.102af153.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebc0176a.js",
+    "static/js/2.85418737.chunk.js",
+    "static/css/main.813a2416.chunk.css",
+    "static/js/main.6fb05159.chunk.js"
+  ]
+}
