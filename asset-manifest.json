@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/cook-app/static/css/main.52ff0071.chunk.css",
-    "main.js": "/cook-app/static/js/main.6fb05159.chunk.js",
-    "main.js.map": "/cook-app/static/js/main.6fb05159.chunk.js.map",
+    "main.css": "/cook-app/static/css/main.b3c74a1c.chunk.css",
+    "main.js": "/cook-app/static/js/main.87ba03cd.chunk.js",
+    "main.js.map": "/cook-app/static/js/main.87ba03cd.chunk.js.map",
     "runtime-main.js": "/cook-app/static/js/runtime-main.7822e317.js",
     "runtime-main.js.map": "/cook-app/static/js/runtime-main.7822e317.js.map",
-    "static/js/2.e27972cb.chunk.js": "/cook-app/static/js/2.e27972cb.chunk.js",
-    "static/js/2.e27972cb.chunk.js.map": "/cook-app/static/js/2.e27972cb.chunk.js.map",
+    "static/js/2.7c5c9ecc.chunk.js": "/cook-app/static/js/2.7c5c9ecc.chunk.js",
+    "static/js/2.7c5c9ecc.chunk.js.map": "/cook-app/static/js/2.7c5c9ecc.chunk.js.map",
     "index.html": "/cook-app/index.html",
-    "static/css/main.52ff0071.chunk.css.map": "/cook-app/static/css/main.52ff0071.chunk.css.map",
-    "static/js/2.e27972cb.chunk.js.LICENSE.txt": "/cook-app/static/js/2.e27972cb.chunk.js.LICENSE.txt",
+    "static/css/main.b3c74a1c.chunk.css.map": "/cook-app/static/css/main.b3c74a1c.chunk.css.map",
+    "static/js/2.7c5c9ecc.chunk.js.LICENSE.txt": "/cook-app/static/js/2.7c5c9ecc.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/cook-app/static/media/bgImg1.bd38b80d.jpg",
     "static/media/module.socialButton.scss": "/cook-app/static/media/btn_google_dark_normal_ios.102af153.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7822e317.js",
-    "static/js/2.e27972cb.chunk.js",
-    "static/css/main.52ff0071.chunk.css",
-    "static/js/main.6fb05159.chunk.js"
+    "static/js/2.7c5c9ecc.chunk.js",
+    "static/css/main.b3c74a1c.chunk.css",
+    "static/js/main.87ba03cd.chunk.js"
   ]
 }
