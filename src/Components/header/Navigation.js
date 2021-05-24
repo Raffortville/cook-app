@@ -41,7 +41,6 @@ const Navigation = (props) => {
         <nav>
             <ul className={className ? className : ''} >
                 {navField.map((field,index) => 
-                
                 <li onClick={()=>handleLinksAction(field)} className="p2 textSecondary" key={index}>
                     <span>
                         <IconButton style={{marginBottom:"5px"}} color="inherit">

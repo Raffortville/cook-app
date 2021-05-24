@@ -27,14 +27,12 @@ const TopHeader = () => {
     return(
         
         <header>
-            {openDrawer && <Drawer close={handleToggleDrawer} openDrawer={openDrawer}/>}
+            <Drawer close={handleToggleDrawer} openDrawer={openDrawer}/>
             <div className="logoTitre">
                 <div>
-
                     <IconButton onClick={()=> handleToggleDrawer()}>
                         <Icon className="textMain">menu</Icon>
                     </IconButton>
-                
                 </div>
                 <div>
                    <Link className="removeLinkStyle" to="/"><p className="h3 textPrimary">COOK APP</p></Link>
