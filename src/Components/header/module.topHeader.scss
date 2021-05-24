@@ -1,74 +1,69 @@
 @import '../../Styles/variables.scss';
 
 header {
-
     height: 10vh;
     padding-right: 10px;
     background-color:$bgColor;
-    @include flex(row,space-between,center); 
+    @include flex(row,flex-start,center);
 
-    .drawerWrap {
+    .drawerWrap.open {
+        opacity: 1;
+        transform: translateX(0%);
+        z-index: 20;
+        width: 230px;
+        transition: all 0.3s ease-in;
+        padding-left: 30px;
+    }
 
-        @include flex(column,flex-start,center);
-        margin-top: 245px;
+    .drawerWrap{
+        @include flex(column,center,flex-start);
+        margin-top: 155px;
+        padding-top: 30px;
         background-color:$bgFull;
+        z-index: 0;
         border-radius: 5px;
-        z-index: 3;
-        width: 20%;
-        height: 60vh;
-        position: relative;
+        width: 30px;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in;
+        opacity: 0;
 
-        .drawerWrapMenu {
-           margin-right: 60px;
-           padding-top: 30px;
-        }
+
 
         .drawerWrapIcon {
-
-            position: absolute;
-            bottom: 0px;
+           align-self: flex-end;
         }
-
+        
         ul {
-
             list-style: none;
+            padding: 0;
         }
     }
-    
-    .wrapName {
 
+    .wrapName {
         margin-bottom: 5px;
         margin-left: 50px;
     }
 
     .logoTitre{
-
         @include flex(row,space-between,center);
     }
 
     .navWrap {
-
+        position: absolute;
+        right: 10px;
         @include flex(row,space-between,center);
 
         .borderButton {
-
            @include borderShadow();
            border-radius: 50%;
         }
-        
-        ul {
-            @include flex(row,space-between,center);
-            list-style: none;
-            
-            li{
-                cursor: pointer;
-            }
-        }
-
         .avatarWrap {
-
             margin-left: 20px;
         }
     }
 }
 
+.inline {
+    display: flex;
+    list-style: none;
+}

@@ -9,15 +9,17 @@ import {setEditFicheForm} from '../../Store/modules/formStore'
 import {initialState} from '../../Store/modules/ficheStore'
 import {userLogSelector} from '../../Store/modules/userStore'
 
-const Navigation = () => {
+const Navigation = (props) => {
 
     let history = useHistory()
 
     const dispatch = useDispatch()
-
+   
     const userLog = useSelector(userLogSelector)
 
     const [navField,setNavField] = useState([])
+
+    const {className} = props
 
     useEffect(() => {
         
@@ -36,9 +38,8 @@ const Navigation = () => {
     }
 
     return(
-
         <nav>
-            <ul>
+            <ul className={className ? className : ''} >
                 {navField.map((field,index) => 
                 
                 <li onClick={()=>handleLinksAction(field)} className="p2 textSecondary" key={index}>

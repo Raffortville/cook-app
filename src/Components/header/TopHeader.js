@@ -27,17 +27,17 @@ const TopHeader = () => {
     return(
         
         <header>
-            {openDrawer && <Drawer close={handleToggleDrawer}/>}
+            {openDrawer && <Drawer close={handleToggleDrawer} openDrawer={openDrawer}/>}
             <div className="logoTitre">
-                <div>{!openDrawer &&
+                <div>
 
                     <IconButton onClick={()=> handleToggleDrawer()}>
                         <Icon className="textMain">menu</Icon>
                     </IconButton>
-                }
+                
                 </div>
                 <div>
-                    {!openDrawer && <Link className="removeLinkStyle" to="/"><p className="h3 textPrimary">COOK APP</p></Link>}  
+                   <Link className="removeLinkStyle" to="/"><p className="h3 textPrimary">COOK APP</p></Link>
                 </div>
             </div>
             <div className="navWrap">
@@ -50,7 +50,7 @@ const TopHeader = () => {
                 </div>
                 }
                 <div>
-                    <Navigation/>   
+                    <Navigation className='inline'/>   
                 </div>
                 {user.username !== "" && 
 
